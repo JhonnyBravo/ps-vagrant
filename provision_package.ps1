@@ -25,3 +25,18 @@ if($install){
         Remove-Item $path
     }
 }
+
+
+<#
+.SYNOPSIS
+パッケージをインストール / アンインストールします。
+
+.DESCRIPTION
+パッケージをインストール / アンインストールします。
+
+.PARAMETER install
+パッケージをインストールします。
+
+.PARAMETER uninstall
+パッケージをアンインストールします。
+#>
