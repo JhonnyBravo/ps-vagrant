@@ -1,20 +1,39 @@
 ﻿param(
-    [string]$path
+    [string]$path,
+    [switch]$x32,
+    [switch]$x64
 )
 
-$url=$(Get-Content $path)
-$dst=$(Split-Path $url -Leaf)
+if($x32){
+    $package="vagrant_1.9.8_i686.msi"
+}elseif($x64){
+    $package="vagrant_1.9.8_x86_64.msi"
+}
 
-wget $url -OutFile $dst
+Import-Csv $path | ForEach-Object {
+    If ($_.Title -eq $package){
+        $url=$_.URL
+    }
+}
 
+if("$url"){
+    firefox "$url"
+}
 
 <#
 .SYNOPSIS
-URL リストに記載された URL から現在のディレクトリへパッケージをダウンロードします。
+CSV に記載された URL から vagrant のパッケージをダウンロードします。
 
 .DESCRIPTION
-URL リストに記載された URL から現在のディレクトリへパッケージをダウンロードします。
+OS のアーキテクチャに合わせて CSV に記載された URL から
+vagrant のパッケージをダウンロードします。
 
 .PARAMETER path
 URL リストのパス。
+
+.PARAMETER x32
+32 bit 版のパッケージをダウンロードします。
+
+.PARAMETER x64
+64 bit 版のパッケージをダウンロードします。
 #>
