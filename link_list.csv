@@ -1,0 +1,10 @@
+Title,URL
+vagrant_1.9.8_SHA256SUMS,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_SHA256SUMS
+vagrant_1.9.8_SHA256SUMS.sig,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_SHA256SUMS.sig
+vagrant_1.9.8_i686.deb,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_i686.deb
+vagrant_1.9.8_i686.msi,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_i686.msi
+vagrant_1.9.8_i686.rpm,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_i686.rpm
+vagrant_1.9.8_x86_64.deb,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_x86_64.deb
+vagrant_1.9.8_x86_64.dmg,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_x86_64.dmg
+vagrant_1.9.8_x86_64.msi,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_x86_64.msi
+vagrant_1.9.8_x86_64.rpm,https://releases.hashicorp.com/vagrant/1.9.8/vagrant_1.9.8_x86_64.rpm
